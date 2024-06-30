@@ -12,10 +12,20 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#colorButton {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#colorButton:hover {
+  background-color: green;
+} 
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,16 +37,54 @@
   margin: 20px;
 }
 
-.controls select,
-.controls button {
-  margin-right: 10px;
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.controls select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.controls select:focus {
+  border-color: #007BFF;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.controls button:active {
+  background-color: #004080;
+}
 .output {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  text-align: center;
+  top: 0;
+  background-color: #a6e8de;
 }
 .App-link {
   color: #61dafb;
@@ -50,3 +98,4 @@
     transform: rotate(360deg);
   }
 }
+
