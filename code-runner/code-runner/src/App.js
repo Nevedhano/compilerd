@@ -36,10 +36,18 @@ function App() {
           <option value="cpp">C++</option>
           <option value="java">Java</option>
         </select>
-        <button onClick={runCode}>Run</button>
+        <button id="colorButton" onClick={runCode}>
+          Run
+        </button>
       </div>
       <CodeEditor language={language} code={code} setCode={setCode} />
       <Output output={output} />
+    </div>
+  );
+}
+
+export default App;
+
     </div>
   );
 }
