@@ -32,9 +32,10 @@ function App() {
       <div className="controls">
         <select value={language} onChange={(e) => setLanguage(e.target.value)}>
           <option value="javascript">JavaScript</option>
+  <option value="java">Java</option>
           <option value="python3">Python</option>
           <option value="cpp">C++</option>
-          <option value="java">Java</option>
+          
         </select>
         <button id="colorButton" onClick={runCode}>
           Run
